@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mory91/jahesh_geeks/issues"
   },
-  "homepage": "https://github.com/mory91/jahesh_geeks#readme"
+  "homepage": "https://github.com/mory91/jahesh_geeks#readme",
+  "dependencies": {
+    "jalaali-js": "^1.0.0"
+  }
 }
