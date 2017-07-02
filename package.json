@@ -1,0 +1,19 @@
+{
+  "name": "jahesh_geeks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mory91/jahesh_geeks.git"
+  },
+  "author": "morteza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mory91/jahesh_geeks/issues"
+  },
+  "homepage": "https://github.com/mory91/jahesh_geeks#readme"
+}
