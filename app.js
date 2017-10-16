@@ -18,10 +18,6 @@ server.listen(8080, function() {
 });
 
 
-// server.use(function (req, res, next) {
-//     console.log(req.U);
-//     return next();
-// });
 server.get('/latest', funcs.latest);
 server.get('/ad', funcs.getAds);
 server.post('/mtos', funcs.mtos);

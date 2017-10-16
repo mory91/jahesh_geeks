@@ -9,6 +9,11 @@ module.exports.latest = function(req, response, next) {
             body += d;
         });
         res.on('end', function() {
+<<<<<<< HEAD
+=======
+
+            // Data reception is done, do whatever with it!
+>>>>>>> 35266100003cfa9de8e788136cc5f0935b4d756c
             var parsed = JSON.parse(body);
             response.send(parsed);
             return next();
@@ -19,27 +24,50 @@ module.exports.getAds = function(req, res, next) {
     ad.findOne({}, {}, { sort: { 'created_at' : -1 } }, function(err, data) {
         if (err)
             console.log(err);
+<<<<<<< HEAD
         else {
             res.send(data);
             return next();
         }
+=======
+        res.send(data);
+>>>>>>> 35266100003cfa9de8e788136cc5f0935b4d756c
     })
 }
 module.exports.stom = function(req, res, next) {
     var birthdateString = req.body["date"];
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 35266100003cfa9de8e788136cc5f0935b4d756c
     var year = parseInt(birthdateString.split("-")[0]);
     var month = parseInt(birthdateString.split("-")[1]);
     var day = parseInt(birthdateString.split("-")[2]);
     res.send(jalali.toGregorian(year, month, day));
+<<<<<<< HEAD
     return next();
 }
 module.exports.mtos = function(req, res, next) {
     var birthdateString = req.body["date"];
+=======
+}
+module.exports.mtos = function(req, res, next) {
+    var birthdateString = req.body["date"];
+  
+>>>>>>> 35266100003cfa9de8e788136cc5f0935b4d756c
     var year = parseInt(birthdateString.split("-")[2]);
     var month = parseInt(birthdateString.split("-")[1]);
     var day = parseInt(birthdateString.split("-")[0]);
     res.send(jalali.toJalaali(year, month, day));
+<<<<<<< HEAD
     return next();
+=======
+    // birthdate = new persianDate([year, month, day]);
+    // console.log("see here")
+    // console.log(birthdate)
+    // console.log("see here to:")
+    // console.log(birthdate.toDate())
+>>>>>>> 35266100003cfa9de8e788136cc5f0935b4d756c
 }
 module.exports.insert = function(req, res, next) {
     var adSample = new ad({
@@ -50,7 +78,10 @@ module.exports.insert = function(req, res, next) {
     adSample.save(function(err) {
         if (err) 
             console.log(err);
+<<<<<<< HEAD
         else
             return next();
+=======
+>>>>>>> 35266100003cfa9de8e788136cc5f0935b4d756c
     });
 }
